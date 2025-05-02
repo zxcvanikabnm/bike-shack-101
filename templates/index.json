@@ -328,6 +328,13 @@
         "padding_top": 0,
         "padding_bottom": 36
       }
+    },
+    "test_section_qziKh7": {
+      "type": "test-section",
+      "name": "Custom Heading",
+      "settings": {
+        "heading_text": "Spring Sale: Get 20% Discount using \"bike20\""
+      }
     }
   },
   "order": [
@@ -338,6 +345,7 @@
     "rich_text_tEbMzP",
     "multicolumn_QzYWQM",
     "featured_collection_6frfxg",
-    "featured_blog_br3dte"
+    "featured_blog_br3dte",
+    "test_section_qziKh7"
   ]
 }
