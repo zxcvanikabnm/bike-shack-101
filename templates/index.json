@@ -15,13 +15,12 @@
         "heading": {
           "type": "heading",
           "settings": {
-            "heading": "BROWSE OUR LATEST PRODUCTS",
+            "heading": "FIND YOUR PERFECT RIDE TODAY!",
             "heading_size": "h1"
           }
         },
         "caption_HMmWJ3": {
           "type": "caption",
-          "disabled": true,
           "settings": {
             "caption": "Quality Bikes for Every Trail",
             "text_style": "caption-with-letter-spacing",
