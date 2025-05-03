@@ -775,11 +775,11 @@
   </div>
 </section>
 
-<script> 
+{% comment %} <script> 
   document.addEventListener('DOMContentLoaded', () => {
     console.info("{{ product.selected_or_first_available_variant.price | divided_by: 100.00}}");
   }, false);
-</script>
+</script> {% endcomment %}
 
 {% schema %}
 {
