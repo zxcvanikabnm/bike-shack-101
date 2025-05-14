@@ -5,18 +5,14 @@ const answers = {};
 
 quiz_form.addEventListener("change", updateAnswers);
 function updateAnswers(event) {
-  //code to store answers
-
-
-
-  console.log("answers: ", answers);
+    //code to store answers
+    answers[event.target.name] = event.target.value;
 }
 
-
 finish_btn.addEventListener("click", function () {
-  if (answers.product_type && answers.bike_type && answers.color) {
-    alert("Here are your answers: " + JSON.stringify(answers));
-  } else {
-    alert("Please answer all the questions!");
-  }
+    if (answers.product_type && answers.bike_type && answers.color) {
+        alert("Here are your answers: " + JSON.stringify(answers));
+    } else {
+        alert("Please answer all the questions!");
+    }
 });
