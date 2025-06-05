@@ -53,6 +53,14 @@
                 "padding_bottom": 0
             }
         },
+        "countdown_JXEJMR": {
+            "type": "countdown",
+            "name": "Countdown",
+            "settings": {
+                "text": "Spring Sale! Save up to 20%",
+                "final_date": "May 25, 2026 16:37:59 EST"
+            }
+        },
         "featured_collection": {
             "type": "featured-collection",
             "custom_css": [
@@ -410,6 +418,7 @@
     },
     "order": [
         "image-with-text",
+        "countdown_JXEJMR",
         "featured_collection",
         "image_with_text_7GrjRn",
         "image_with_text_e7KBW4",
