@@ -355,8 +355,13 @@
           document.addEventListener('afterVariantChange', handleVariantChange)
 
           function handleVariantChange(event){
-            console.log('New variant:', event.detail.newVariant)
-          }
+            // console.log('Hi');
+            console.log('✅ Variant change detected!');
+            console.log('Event type: ', event);
+            console.log('Event detail: ', event.detail);
+            console.log('OLD variant: ', event.detail.oldVariant);
+            console.log('NEW variant: ', event.detail.newVariant);  
+        }
           
       </script>
     {% endif %}
