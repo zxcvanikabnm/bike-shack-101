@@ -258,7 +258,7 @@
                         </tr>
                         <tr>
                           <td>Braking System</td>
-                          <td id='meta-information-breaks'></td>
+                          <td id='meta-information-brakes'></td>
                         </tr>
                        
                       </tbody>
@@ -275,7 +275,7 @@
                     "range":"Depends on rider (30 km on average)",
                     "speed":"20 km/h (average)",
                     "battery":"N/A",
-                    "breaks":"Mechanical disc brakes"
+                    "brakes":"Mechanical disc brakes"
 
                   },
                   "Electric": {
@@ -283,28 +283,37 @@
                     "range":"85 km per charge",
                     "speed":"25 km/h (assisted)",
                     "battery":"4 hours of battery life, 3 hours to charge",
-                    "breaks":"Hydraulic disc brakes"
+                    "brakes":"Hydraulic disc brakes"
                   }
                 }
                 </script>
 
                 <script>
                   const variantMetaData = JSON.parse(document.querySelector('#variant_meta_information').innerHTML);
-                  console.log("parsed variantMetaData", variantMetaData)
+                //   console.log("parsed variantMetaData", variantMetaData)
 
                   const weightTxt = document.querySelector('#meta-information-weight');
                   const rangeTxt = document.querySelector('#meta-information-range');
                   const speedTxt = document.querySelector('#meta-information-speed');
                   const batteryTxt = document.querySelector('#meta-information-battery');
-                  const breaksTxt = document.querySelector('#meta-information-breaks');
+                  const brakesTxt = document.querySelector('#meta-information-brakes');
 
-                  function updateUI(variantOption) {
+                  function updateUI(variantOption) {      
+                    // console.log(variantMetaData[variantOption].weight)
 
+                    weightTxt.innerText = variantMetaData[variantOption].weight;
+                    rangeTxt.innerText = variantMetaData[variantOption].range;
+                    speedTxt.innerText = variantMetaData[variantOption].speed;
+                    batteryTxt.innerText = variantMetaData[variantOption].battery;
+                    brakesTxt.innerText = variantMetaData[variantOption].brakes;
                   }
                   //subscribe to variant changes and update UI based on new selection
-                  //...
-
-
+                  document.addEventListener("afterVariantChange", event => {
+                    // console.log("event data: ", event.detail)
+                    const variantOption = event.detail.newVariant.option1
+                    // console.log("Option: ", variantOption) 
+                    updateUI(variantOption)
+                  })
 
                   //initialize on pageload
                   const initialVariantOption = document.querySelector('#meta-information-table').dataset.initialvariantoption;
