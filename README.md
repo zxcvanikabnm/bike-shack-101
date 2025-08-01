@@ -20,9 +20,9 @@ To use this theme:
 
 1. Clone the repository:
 
-   git clone https://github.com/zxcvanikabnm/bike-shack-101.git
-   cd bike-shack-101
-   shopify theme dev
+   - git clone https://github.com/zxcvanikabnm/bike-shack-101.git
+   - cd bike-shack-101
+   - shopify theme dev
 
 2. For detailed usage, refer to the Shopify CLI documentation https://shopify.dev/docs/api/shopify-cli for more information.
 
