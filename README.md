@@ -20,7 +20,6 @@ To use this theme:
 
 1. Clone the repository:
 
-   ```bash
    git clone https://github.com/zxcvanikabnm/bike-shack-101.git
    cd bike-shack-101
    shopify theme dev
