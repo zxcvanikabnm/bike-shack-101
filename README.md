@@ -29,7 +29,7 @@ To use this theme:
 ## 🛠 Tech Stack
 - **Shopify Liquid**
 - **Shopify CLI**
-- **JavaScript (ES6+)**
+- **JavaScript**
 - **JSON templates**
 - **Dawn Theme base**
 - **CSS**
