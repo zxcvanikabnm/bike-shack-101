@@ -61,8 +61,8 @@
       "type": "countdown",
       "name": "Countdown",
       "settings": {
-        "text": "Summer Sale Event! Save up to 20%",
-        "final_date": "August 31, 2025 00:00:00 EST"
+        "text": "Autumn Sale Event! Save up to 20%",
+        "final_date": "September 15, 2025 00:00:00 EST"
       }
     },
     "featured_collection": {
