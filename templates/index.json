@@ -61,8 +61,8 @@
       "type": "countdown",
       "name": "Countdown",
       "settings": {
-        "text": "Fall Sale Event! Save up to 20%",
-        "final_date": "September 16, 2025 00:00:00 EST"
+        "text": "Fall Sale Event! Save up to 25%",
+        "final_date": "September 15, 2025 00:00:00 EST"
       }
     },
     "featured_collection": {
